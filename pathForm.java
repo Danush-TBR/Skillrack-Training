@@ -6,13 +6,21 @@ public class pathForm {
             grid[R-1][C-1]=3; return;
         }
         grid[curr_row][curr_col]=2;
+        //top
         dfs(grid,curr_row-1,curr_col,R,C);
+        //top left
         dfs(grid,curr_row-1,curr_col-1,R,C);
+        //top right
         dfs(grid,curr_row-1,curr_col+1,R,C);
+        //bottom
         dfs(grid,curr_row+1,curr_col,R,C);
+        //bottom left
         dfs(grid,curr_row+1,curr_col-1,R,C);
+        //bottom right
         dfs(grid,curr_row+1,curr_col+1,R,C);
+        //left
         dfs(grid,curr_row,curr_col-1,R,C);
+        //right
         dfs(grid,curr_row,curr_col+1,R,C);
     }
     public static void main(String[] args) {
