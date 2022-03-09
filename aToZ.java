@@ -9,7 +9,7 @@ public class aToZ {
             result|=(1<<(myArr[i]-97));
         }
         System.out.println(result);
-        if(result==(1<<26)-1){
+        if((result&(1<<26))==0){
             System.out.print("Yes");
         }
         else{
