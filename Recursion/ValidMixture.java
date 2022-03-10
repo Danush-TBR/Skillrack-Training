@@ -2,11 +2,8 @@ import java.util.Scanner;
 
 public class ValidMixture {
     public static boolean isValid(char[] str1,char[] str2,char[] str3,int ind1,int ind2,int ind3,int len1,int len2,int len3){
-        if((ind1<len1 || ind2<len2) && ind3>=len3) return false;
-        if(ind1>=len1 && ind2>=len2){
-            if(ind3<len3) return false;
-            else return true;
-        }
+        // if((ind1<len1 || ind2<len2) && ind3>=len3) return false;
+        if(ind3>=len3) return true;
         if(ind1<len1 && ind2<len2 && str1[ind1]!=str3[ind3] && str2[ind2]!=str3[ind3]) return false;
         if(ind1<len1 && ind2<len2){
             if(str1[ind1]==str2[ind2] && str2[ind2]==str3[ind3]){
