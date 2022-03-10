@@ -28,5 +28,6 @@ public class MaximumCouponPathMatrix {
             System.out.println();
         }
         System.out.print(DP[R][C]);
+        scanner.close();
     }
 }
