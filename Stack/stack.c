@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 int top=-1,*myStack,N;
-// Queue<Integer> myStack = new LinkedList<>();
+// Stack<Integer> myStack = new LinkedList<>();
 void push(int value){
     if(top==N-1) printf("Stack OverFlow\n");
     myStack[++top]=value;
