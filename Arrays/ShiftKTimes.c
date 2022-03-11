@@ -19,11 +19,18 @@ int main(){
     }
     scanf("%d",&K);
     K%=N;
+    //Anti - Clockwise
     if(K!=0){
         reverse(arr,0,K-1);
         reverse(arr,K,N-1);
         reverse(arr,0,N-1);
     }
+    //Clockwise
+    // if(K!=0){
+    //     reverse(arr,0,N-1);
+    //     reverse(arr,0,K-1);
+    //     reverse(arr,K,N-1);
+    // }
     for(int i=0;i<N;i++){
         printf("%d ",arr[i]);
     }
